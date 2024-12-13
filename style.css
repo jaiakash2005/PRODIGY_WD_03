@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: skyblue;
+  }
+  
+  .game-container {
+    text-align: center;
+  }
+  
+  label {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  select {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .cell.taken {
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  
+  #status {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  #restart-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #restart-btn:hover {
+    background-color: #0056b3;
+  }
+  
